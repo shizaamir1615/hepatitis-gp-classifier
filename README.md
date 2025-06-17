@@ -66,7 +66,7 @@ pip install numpy pandas
 python main.py
 ```
 
-###️ Run the Compiled Executable
+### Run the Compiled Executable
 
 If you’re using the compiled `.exe` or binary:
 ```bash
