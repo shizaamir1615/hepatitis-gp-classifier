@@ -4,7 +4,7 @@ This project is my implementation of Genetic Programming (GP) and Structure-Base
 
 ---
 
-## 📁 Overview
+## Overview
 
 I compared Regular GP and Structure-Based GP (ISBA) on the EpistasisLab hepatitis dataset. ISBA uses a two-phase evolutionary strategy:  
 - **Global Exploration** using multiple seeded runs to find structurally diverse high-performing individuals.  
@@ -14,7 +14,7 @@ Cosine similarity filtering (GSim) is also used to maintain novelty during cross
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Source**: EpistasisLab Hepatitis Dataset (`hepatitis.tsv`)
 - **Goal**: Binary classification of patient survival outcome
@@ -26,7 +26,7 @@ Cosine similarity filtering (GSim) is also used to maintain novelty during cross
 
 ---
 
-## 🧬 Evolution Setup
+## Evolution Setup
 
 | Component              | Description |
 |------------------------|-------------|
@@ -42,11 +42,11 @@ Cosine similarity filtering (GSim) is also used to maintain novelty during cross
 
 ---
 
-## ⚙️ How to Run
+##  How to Run
 
-> ⏳ **Note**: The code takes around **15 minutes** to run. It runs **10 random seeds**, once for Regular GP and once for Structure-Based GP.
+>  **Note**: The code takes around **15 minutes** to run. It runs **10 random seeds**, once for Regular GP and once for Structure-Based GP.
 
-### 🔧 Requirements
+###  Requirements
 
 Ensure the following are installed:
 - Python 3.x
@@ -58,7 +58,7 @@ Install dependencies with:
 pip install numpy pandas
 ```
 
-### ▶️ Run the Python Code
+###  Run the Python Code
 
 1. Place `hepatitis.tsv` in the **same directory** as `main.py`.
 2. Run:
@@ -66,7 +66,7 @@ pip install numpy pandas
 python main.py
 ```
 
-### 🛠️ Run the Compiled Executable
+###️ Run the Compiled Executable
 
 If you’re using the compiled `.exe` or binary:
 ```bash
@@ -75,7 +75,7 @@ If you’re using the compiled `.exe` or binary:
 
 ---
 
-## 📈 Results Summary
+## Results Summary
 
 | Metric               | Regular GP | SBGP (ISBA) |
 |----------------------|------------|-------------|
@@ -88,13 +88,13 @@ Structure-Based GP achieved higher accuracy, more stable results across seeds, a
 
 ---
 
-## 🧠 Reflection
+## Reflection
 
 Initially, I tried simplifying structures too aggressively using penalties and hard constraints. But this led to underfitting. Moving to ISBA helped me refine useful subtrees rather than discarding them, balancing expressivity with structure. Features like subtree locking and cosine similarity made the evolution process more stable and smarter—not just random mutation and crossover.
 
 ---
 
-## 📌 Future Work
+## Future Work
 
 - Hyperparameter tuning for better ISBA performance  
 - Integration with semantic-aware crossover  
